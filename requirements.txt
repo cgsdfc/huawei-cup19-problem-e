@@ -1,0 +1,8 @@
+openpyxl
+joblib
+pandas
+# tensorflow
+kaleido
+# tensorboard
+seaborn
+plotly
