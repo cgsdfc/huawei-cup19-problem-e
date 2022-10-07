@@ -6,3 +6,6 @@ kaleido
 # tensorboard
 seaborn
 plotly
+jupyter
+notebook
+xlrd
