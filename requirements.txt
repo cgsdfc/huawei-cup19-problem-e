@@ -9,3 +9,4 @@ plotly
 jupyter
 notebook
 xlrd
+pydot
