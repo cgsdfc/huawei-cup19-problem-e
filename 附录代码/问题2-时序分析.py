@@ -7,7 +7,6 @@ plt.rcParams['font.sans-serif'] = ['KaiTi', 'SimHei',
 plt.rcParams['font.size'] = 12  # 字体大小
 plt.rcParams['axes.unicode_minus'] = False  # 正常显示负号
 
-
 # 这里对问题2的诸多变量进行了分组（比如降水组，温度组，风速组），然后每组进行时序图的可视化。
 #
 # 对变量分组的说明如下：

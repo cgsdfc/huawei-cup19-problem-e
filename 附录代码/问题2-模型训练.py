@@ -8,7 +8,6 @@ plt.rcParams['font.sans-serif'] = ['KaiTi', 'SimHei',
 plt.rcParams['font.size'] = 12  # 字体大小
 plt.rcParams['axes.unicode_minus'] = False  # 正常显示负号
 
-
 learning_rate = 0.001
 train_size = 0.8
 seqlen = 1
@@ -93,7 +92,6 @@ history = model.fit(
 #
 # 挑一个好看的就行。
 
-
 def visualize_loss(history, title):
     loss = history.history["loss"]
     val_loss = history.history["val_loss"]
@@ -106,6 +104,5 @@ def visualize_loss(history, title):
     plt.ylabel("Loss")
     plt.legend()
     plt.show()
-
 
 visualize_loss(history, "Training and Validation Loss")

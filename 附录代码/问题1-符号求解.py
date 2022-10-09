@@ -39,7 +39,6 @@ Eq(a1, (1 - exp(eg * w(t) / w_star)))
 
 Eq(a2, (1 - exp(-eg * w(t) / w_star)))
 
-
 cp = a2 * \
     (alpha_star - W(t) * a1-1.8*S(t))
 cp

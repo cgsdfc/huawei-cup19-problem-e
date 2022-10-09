@@ -80,19 +80,11 @@ def plotCorr(xcorr, title):
                     annot=True,
                     fmt='0.2f')
     plt.title(title)
-    #  xcorr : 数据矩阵
-    #  mask : 为True的元素对应位置不会画出来（mask面具的意义）
-    #  cmap: 颜色设置
-    #  square: （True）代表行列长度一致，且绘制的每个也是方格
-    #  annot ： 在格内显示数据
-    #  fmt ：数据格式
 
 
 df_corr = df[H_COLS + RAIN_COLS].corr()
 df_corr_list.append(df_corr.loc[RAIN_COLS, H_COLS])
 plotCorr(df_corr, '降水量对土壤湿度的影响')
-
-# 1.
 
 df_corr = df[H_COLS + TEMP_COLS].corr()
 df_corr_list.append(df_corr.loc[TEMP_COLS, H_COLS])
@@ -131,8 +123,6 @@ plotCorr(df_corr, '不同深度土壤湿度的互相影响')
 # 2. 最深层和最浅层的湿度是负相关，可能因为水从浅层渗透到深层；
 
 df = pd.concat(df_corr_list).abs()
-df
-
 df.to_csv('各变量对土壤湿度因变量的相关系数.csv')
 
 for col in df.columns:
