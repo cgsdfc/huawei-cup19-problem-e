@@ -141,3 +141,4 @@ logdir/
 
 /ignored/
 /数据集/
+*.zip
