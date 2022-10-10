@@ -1,9 +1,10 @@
 openpyxl
 joblib
 pandas
-# tensorflow
+tensorflow
 kaleido
 # tensorboard
+sklearn
 seaborn
 plotly
 jupyter
